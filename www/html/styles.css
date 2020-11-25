@@ -1,11 +1,19 @@
 #header
 {
-	font-size: 30pt;
-	color: green;
+	font-size: 18pt;
+	color: white;
+	background: gray;
+	height: 3rem;
+	width: 18rem;
 
 }
 
-.hobby
+#headerFloatLeft
 {
-	Background: red;
+	float: right;
+}
+
+.info
+{
+	
 }
