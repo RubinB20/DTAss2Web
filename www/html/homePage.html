@@ -4,7 +4,7 @@
 		<link rel="stylesheet" type="text/css" href="D:\UNI WORK\DT\cygsdk-20200926\cygsdk\home\rubin\DTAss2Web\www\html\styles.css" />
 		
 		<title>My website about activision</title>
-		
+
 	</head>
 	
 	<body>
@@ -23,23 +23,63 @@
 				</div>
 			</div>
 		</div>
-		
-		
-		
 		<br>
-			<div class="boxed">
-				<br>
-				<p>Hello and welcome to my website about the company activision!</p>
-				<br>
-				<p>This website will talk about the company itself and discuss a few of the main games that have been created or published by Activision.</p>
-			
-				<br>
-			</div>
-			
+	
+		<div class="slideshow-container">
+
+		<div class="mySlides fade">
+			<div class="numbertext">1 / 3</div>
+				<img src="D:\UNI WORK\DT\cygsdk-20200926\cygsdk\home\rubin\DTAss2Web\www\images\activisionSlideshowImg1.jpg" style="width:100%">
+			<div class="text">Activision Games</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 3</div>
+				<img src="D:\UNI WORK\DT\cygsdk-20200926\cygsdk\home\rubin\DTAss2Web\www\images\activisionSlideshowImg2.jpg" style="width:100%">
+			<div class="text">Activision HQ</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">3 / 3</div>
+				<img src="D:\UNI WORK\DT\cygsdk-20200926\cygsdk\home\rubin\DTAss2Web\www\images\activisionSlideshowImg3.jpg" style="width:100%">
+			<div class="text">Activision Characters</div>
+		</div>
+
+		</div>
+		<br>
+
+		<div style="text-align:center">
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+		</div>
+
+		<script>
+			var slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+			}
+			slideIndex++;
+		if (slideIndex > slides.length) {slideIndex = 1}    
+		for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";  
+			dots[slideIndex-1].className += " active";
+			setTimeout(showSlides, 3500); // Change image every 2 seconds
+			}
+		</script>
+		
 		
 		<br>
 		<div id="footer">
-			<br>
+	
 				Made by Rubin Bayfield 2020 &copy;
 		
 		</div>
